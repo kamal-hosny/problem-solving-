@@ -1,12 +1,13 @@
-function repeatStr (n, s) {
-    
-    const basket = []
+function digitize(n) {
+    const arr = []
+    let str = String(n)
 
-    for (let i = 0; i < n; i++) {
-        basket.push(s)
+    for (let i = 0; i < str.length; i++) {
+        
+        arr.push(Number(str[i]))
     }
 
-    return basket.join("");
+    return arr.reverse()
   }
 
-  console.log(repeatStr( 5 , "I" ));
+  console.log(digitize(324));
