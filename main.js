@@ -1,14 +1,14 @@
-
-function positiveSum(arr) {
-    let list = 0
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 0) {
-            list += arr[i]
-        }
+function sumArray(array) {
+    if (!Array.isArray(array) || array.length <= 2) {
+        return 0
     }
-    return list
+
+    array.sort((a,b)=> a - b)
+    array.shift()
+    array.pop()
+    let sum = array.reduce((acc, num) => acc + num, 0)
+    return sum
+
 }
 
-
-
-console.log(positiveSum([1, -4, 7, 12]));
+console.log(sumArray([6, 2, 1, 8, 10]));
