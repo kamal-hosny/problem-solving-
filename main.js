@@ -1,5 +1,6 @@
-function opposite(number) {
-    return -number
+function makeNegative(num) {
+    
+    return num > 0 ? -num : num
+    
   }
-
-  console.log(opposite(1));
+  console.log(makeNegative(1));
