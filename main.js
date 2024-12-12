@@ -1,13 +1,19 @@
-function digitize(n) {
-    const arr = []
-    let str = String(n)
+function countSheeps(sheep) {
+    let conter = 0
 
-    for (let i = 0; i < str.length; i++) {
+    for (let i = 0; i < sheep.length; i++) {
+        if(sheep[i]){
+            conter ++
+        }
         
-        arr.push(Number(str[i]))
     }
 
-    return arr.reverse()
-  }
+    return conter
+}
 
-  console.log(digitize(324));
+console.log(countSheeps([true, true, true, false,
+    true, true, true, true,
+    true, false, true, false,
+    true, false, false, true,
+    true, true, true, true,
+    false, false, true, true]));
