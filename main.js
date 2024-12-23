@@ -1,18 +1,18 @@
 function squareOrSquareRoot(array) {
- let num = []
+  let num = []
 
- for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
 
-  if(Number.isInteger(Math.sqrt(array[i]))){
-    num.push(Math.sqrt(array[i]))
-    
-  }else{
-    num.push(array[i] ** 2)
+    if (Number.isInteger(Math.sqrt(array[i]))) {
+      num.push(Math.sqrt(array[i]))
+
+    } else {
+      num.push(array[i] ** 2)
+    }
+
   }
-  
- }
 
-  return num ;
+  return num;
 }
 
-console.log(squareOrSquareRoot([4,3,9,7,2,1]));
+console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));
