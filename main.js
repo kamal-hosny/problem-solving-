@@ -1,22 +1,18 @@
-function basicOp(operation, value1, value2){
-  //Code
-  switch (operation) {
-    case "+" :
-      return value1 + value2
-      break;
-      case "-" :
-        return value1 - value2
-        break;
-      case "*" :
-        return value1 * value2
-        break;
-      case "/" :
-        return value1 / value2
-        break;
-    default:
-      break;
+function squareOrSquareRoot(array) {
+ let num = []
+
+ for (let i = 0; i < array.length; i++) {
+
+  if(Number.isInteger(Math.sqrt(array[i]))){
+    num.push(Math.sqrt(array[i]))
+    
+  }else{
+    num.push(array[i] ** 2)
   }
-  return clac ;
+  
+ }
+
+  return num ;
 }
 
-console.log(basicOp('-', 4, 7));
+console.log(squareOrSquareRoot([4,3,9,7,2,1]));
