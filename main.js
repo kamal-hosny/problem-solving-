@@ -1,8 +1,5 @@
-const stringToNumber = function(str){
-  if(typeof str === "string"){
-    return Number(str)
+function monkeyCount(n) {
+   return Array.from({length: n}, (_, i) => i + 1)
   }
-  
-}
 
-console.log(stringToNumber("1234"));
+  console.log(monkeyCount(4));
