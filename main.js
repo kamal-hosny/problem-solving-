@@ -1,13 +1,11 @@
-function removeEveryOther(arr){
+function createArray(number){
+  var newArray = [];
   
-  let newArr = []
-
-  for (let i = 0; i < arr.length; i+= 2) {
-    newArr.push(arr[i])
-    
+  for(var counter = 1; counter <= number; counter++ ){
+    newArray.push(counter);
   }
-
-  return newArr
+  
+  return newArray;
 }
 
-console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
+console.log(createArray(10));
