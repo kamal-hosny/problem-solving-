@@ -1,5 +1,7 @@
-function litres(time) {
-  return (Math.floor(time / 2));
+function numberToString(num) {
+  if(typeof num === "number" ) {
+    return num.toString()
+  }
 }
 
-console.log(3);
+console.log(numberToString(123));
