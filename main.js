@@ -1,18 +1,9 @@
-function squareOrSquareRoot(array) {
-  let num = []
+function noSpace(x){
 
-  for (let i = 0; i < array.length; i++) {
 
-    if (Number.isInteger(Math.sqrt(array[i]))) {
-      num.push(Math.sqrt(array[i]))
-
-    } else {
-      num.push(array[i] ** 2)
-    }
-
-  }
-
-  return num;
+  return x.split("").filter((y) => {
+    return y != [" "]
+  }).join("")
 }
 
-console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));
+console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl     s B" ));
