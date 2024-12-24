@@ -1,11 +1,13 @@
-function remove (string) {
+function removeEveryOther(arr){
   
-  if(string.slice(-1) === "!"){
-    return string.slice(0 , -1)
-  }else{ 
-    return string
+  let newArr = []
+
+  for (let i = 0; i < arr.length; i+= 2) {
+    newArr.push(arr[i])
+    
   }
+
+  return newArr
 }
 
-console.log(remove("Hi!"));
-console.log(remove("Hi!!!"));
+console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
