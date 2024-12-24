@@ -1,6 +1,17 @@
-function smash (words) {
+function switchItUp(number){
+  
+  switch (number) {
+    case 1:
+      return "One"
+      break;
+    case 3:
+      return "Three"
+      break;
+    case 5:
+      return "Five"
+      break;
+  
+  }
+  }
 
-  return words.join(" ")
-};
-
-console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+  console.log(switchItUp(1));
