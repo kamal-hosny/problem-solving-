@@ -1,6 +1,15 @@
-function xor(a, b) {
-  // TODO: Program Me
-  return (a || b) && !( a && b)
-}
+function firstNonConsecutive (arr) {
+  if (arr.length < 2) {
+    return null;
+  }
 
-xor(true, true)
+  for (let i = 1; i < arr.length; i++) {
+    if(arr[i] !== arr[i - 1] + 1){
+      return arr[i]
+      
+    }
+    
+  }
+  return null
+}
+console.log(firstNonConsecutive([1, 2, 4]));
