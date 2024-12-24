@@ -1,11 +1,13 @@
-function createArray(number){
-  var newArray = [];
-  
-  for(var counter = 1; counter <= number; counter++ ){
-    newArray.push(counter);
+function rentalCarCost(d) {
+  const price = 40 * d;
+
+  if (d >= 7) {
+    return price - 50; 
+  } else if (d >= 3) {
+    return price - 20; 
+  } else {
+    return price; 
   }
-  
-  return newArray;
 }
 
-console.log(createArray(10));
+console.log(rentalCarCost(7));
