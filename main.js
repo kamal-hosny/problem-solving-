@@ -1,18 +1,13 @@
-function squareOrSquareRoot(array) {
-  let num = []
+function countBy(x, n) {
+  let z = [];
 
-  for (let i = 0; i < array.length; i++) {
-
-    if (Number.isInteger(Math.sqrt(array[i]))) {
-      num.push(Math.sqrt(array[i]))
-
-    } else {
-      num.push(array[i] ** 2)
-    }
+  for (let i = 1; i <= n; i ++) {
+    
+    z.push(x * i)
 
   }
 
-  return num;
+  return z;
 }
 
-console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));
+console.log(countBy(2, 5));
