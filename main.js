@@ -1,9 +1,7 @@
-function noSpace(x){
-
-
-  return x.split("").filter((y) => {
-    return y != [" "]
-  }).join("")
+function invert(array) {
+  return array.map((x) => {
+    return -x
+  })
 }
 
-console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl     s B" ));
+console.log(invert([1, 2, -3, 4, 5]));
