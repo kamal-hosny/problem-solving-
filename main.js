@@ -1,27 +1,6 @@
-function greet(language) {
-  const languageDatabase = {
-    english: "Welcome",
-    czech: "Vitejte",
-    danish: "Velkomst",
-    dutch: "Welkom",
-    estonian: "Tere tulemast",
-    finnish: "Tervetuloa",
-    flemish: "Welgekomen",
-    french: "Bienvenue",
-    german: "Willkommen",
-    irish: "Failte",
-    italian: "Benvenuto",
-    latvian: "Gaidits",
-    lithuanian: "Laukiamas",
-    polish: "Witamy",
-    spanish: "Bienvenido",
-    swedish: "Valkommen",
-    welsh: "Croeso"
-  };
+function smash (words) {
 
-  return languageDatabase[language] || languageDatabase["english"]
+  return words.join(" ")
+};
 
-}
-
-console.log(greet("english"
-));
+console.log(smash(['hello', 'world', 'this', 'is', 'great']));
