@@ -1,5 +1,5 @@
-function reverse(string){
-  return string.split(" ").reverse().join(" ")
+function litres(time) {
+  return (Math.floor(time / 2));
 }
 
-console.log(reverse("Hello World"));
+console.log(3);
