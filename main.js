@@ -1,5 +1,5 @@
-function boolToWord( bool ){
-  return bool ? "Yes" : "No"
+function reverse(string){
+  return string.split(" ").reverse().join(" ")
 }
 
-console.log(boolToWord());
+console.log(reverse("Hello World"));
