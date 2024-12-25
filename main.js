@@ -1,15 +1,8 @@
-function firstNonConsecutive (arr) {
-  if (arr.length < 2) {
-    return null;
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    return length * width * height
   }
-
-  for (let i = 1; i < arr.length; i++) {
-    if(arr[i] !== arr[i - 1] + 1){
-      return arr[i]
-      
-    }
-    
-  }
-  return null
 }
-console.log(firstNonConsecutive([1, 2, 4]));
+
+console.log(Kata.getVolumeOfCuboid(2, 3, 4));
