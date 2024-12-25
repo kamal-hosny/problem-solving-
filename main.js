@@ -1,5 +1,9 @@
-function formatMoney(amount){
-  return `$${amount.toFixed(2)}`
+function position(letter){
+  //Write your own Code!
+
+  const findNum = letter.toLowerCase().charCodeAt(0) - 97 + 1
+  
+  return `Position of alphabet: ${findNum}`
 }
 
-console.log(formatMoney(3));
+console.log(position("z"));
