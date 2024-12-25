@@ -1,8 +1,5 @@
-class Kata {
-  static getVolumeOfCuboid(length, width, height) {
-    // your code here
-    return length * width * height
-  }
+function twoDecimalPlaces(n) {
+  return  parseFloat(n.toFixed(2)) 
 }
 
-console.log(Kata.getVolumeOfCuboid(2, 3, 4));
+console.log(twoDecimalPlaces(5.5589));
