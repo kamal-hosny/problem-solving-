@@ -1,5 +1,5 @@
-function twoDecimalPlaces(n) {
-  return  parseFloat(n.toFixed(2)) 
+function formatMoney(amount){
+  return `$${amount.toFixed(2)}`
 }
 
-console.log(twoDecimalPlaces(5.5589));
+console.log(formatMoney(3));
