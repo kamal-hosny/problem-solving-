@@ -1,9 +1,9 @@
-function solution(str){
-  let result = []
-  for (let i = str.length - 1; i >= 0; i--) {
-    result.push(str[i])
+function grow(x){
+  if(x === null || x == 0) {
+    return 0
   }
-  return result.join('')
-
+  return x.reduce((x, y) => {
+    return x * y
+  })
 }
-console.log(solution("world"));
+console.log(grow([1, 2, 3, 4]));
