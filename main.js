@@ -1,9 +1,16 @@
-function lovefunc(flower1, flower2){
-  
-  let numStatus1 = flower1 % 2 ;
-  let numStatus2 = flower2 % 2 ;
+function noBoringZeros(n) {
+  if (n === 0) return 0;
+ let numArray =  Array.from(String(n), String)
 
-  return numStatus1 !== numStatus2 
+
+ for (let i = 0; i < numArray.length + 1; i++) {
+  if(numArray[numArray.length - 1] == 0) {
+    numArray.pop()
+  }
+ }
+ 
+ return Number(numArray.join(""))
+
 }
 
-console.log(lovefunc(1,4));
+console.log(noBoringZeros(50));
