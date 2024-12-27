@@ -1,17 +1,9 @@
-
-function removeExclamationMarks(s) {
-  
+function solution(str){
   let result = []
-
-  for (let i = 0; i < s.length; i++) {
-    if( s[i] !== "!") {
-      result.push(s[i])
-    }
-    
+  for (let i = str.length - 1; i >= 0; i--) {
+    result.push(str[i])
   }
-  return result.join("")
-
+  return result.join('')
 
 }
-
-console.log(removeExclamationMarks("Hello World!"));
+console.log(solution("world"));
