@@ -1,13 +1,20 @@
-function shortcut (string) {
-  const vowels  = ["a", "e", "i", "o", "u"]
+
+
+function removeExclamationMarks(s) {
+  
+  const re = "i"
 
   let result = []
 
-  for (let i = 0; i < string.length; i++) {
-    if(!vowels.includes(string[i]))
-    result.push(string[i])
+  for (let i = 0; i < s.length; i++) {
+    if(re.includes(s)) {
+      result.push(s)
+    }
+    
   }
-  return result.join('')
+  return result
+
+
 }
 
-console.log(shortcut("hello"));
+console.log(removeExclamationMarks("Hello World!"));
