@@ -1,18 +1,15 @@
 
-
 function removeExclamationMarks(s) {
   
-  const re = "i"
-
   let result = []
 
   for (let i = 0; i < s.length; i++) {
-    if(re.includes(s)) {
-      result.push(s)
+    if( s[i] !== "!") {
+      result.push(s[i])
     }
     
   }
-  return result
+  return result.join("")
 
 
 }
