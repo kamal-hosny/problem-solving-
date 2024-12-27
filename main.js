@@ -1,18 +1,13 @@
-function getAverage(marks){
-  //TODO : calculate the downward rounded average of the marks array
+function shortcut (string) {
+  const vowels  = ["a", "e", "i", "o", "u"]
 
-  if(marks.length === 0) {
-    return 0
+  let result = []
+
+  for (let i = 0; i < string.length; i++) {
+    if(!vowels.includes(string[i]))
+    result.push(string[i])
   }
-
-  let Sum = marks.reduce((x , y) => {
-    return x + y
-  })
-  let Count = marks.length
-  let Average = Sum / Count  
-
-  return Math.floor(Average)
-
+  return result.join('')
 }
 
-console.log(getAverage([1,5,87,45,8,8]));
+console.log(shortcut("hello"));
