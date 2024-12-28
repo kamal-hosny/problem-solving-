@@ -1,8 +1,5 @@
-var summation = function (num) {
-
-  return Array.from({length: num}, (_, i) => i + 1).reduce((x, y) => {
-    return x + y
-  })
+function printArray(array){
+  return array.join(",")
 }
 
-console.log(summation(3));
+console.log(printArray(["h","o","l","a"]));
