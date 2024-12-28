@@ -1,13 +1,8 @@
-function isPalindrome(x) {
-  let left = x.toLowerCase()
-  let right = [...x].reverse().join("").toLowerCase()
-  
-  // your code here
-  if( left === right) {
-    return true
-  } else {
-    return false
-  }
+var summation = function (num) {
+
+  return Array.from({length: num}, (_, i) => i + 1).reduce((x, y) => {
+    return x + y
+  })
 }
 
-console.log(isPalindrome("aba"));
+console.log(summation(3));
