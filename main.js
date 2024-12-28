@@ -1,26 +1,11 @@
-function squareSum(numbers){
-if( numbers.length < 1){
-  return 0
-}
-
-let result = 0
-let squr1 = []
-  for (let y = 0; y < numbers.length; y++) {
-    squr1.push(numbers[y] ** 2)
+function findSmallestInt(args) {
+  //your code here
+  let min = args[0];
+  for (let i = 0; i < args.length; i++) {
+    min = min < args[i] ? min : args[i]
     
   }
-  for (let i = 0; i < squr1.length; i++) {
-    result += squr1[i]
-  }
-return result
-
-
-// return numbers.map((x) => {
-//   return x ** 2
-// }).reduce((x, y) => {
-// return x + y
-// }, 0)
-
+  return min;
 }
 
-console.log(squareSum([1, 2]));
+console.log(findSmallestInt([34, 15, 88, 2]));
