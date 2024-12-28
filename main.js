@@ -1,9 +1,13 @@
-function grow(x){
-  if(x === null || x == 0) {
-    return 0
+function isPalindrome(x) {
+  let left = x.toLowerCase()
+  let right = [...x].reverse().join("").toLowerCase()
+  
+  // your code here
+  if( left === right) {
+    return true
+  } else {
+    return false
   }
-  return x.reduce((x, y) => {
-    return x * y
-  })
 }
-console.log(grow([1, 2, 3, 4]));
+
+console.log(isPalindrome("aba"));
