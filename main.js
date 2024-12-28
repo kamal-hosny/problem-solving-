@@ -1,11 +1,11 @@
-function findSmallestInt(args) {
-  //your code here
-  let min = args[0];
-  for (let i = 0; i < args.length; i++) {
-    min = min < args[i] ? min : args[i]
-    
+function isDivisible(n, x, y) {
+
+  if(n % x == 0 && n % y == 0) {
+    return true
+  }else{
+    return false
   }
-  return min;
+
 }
 
-console.log(findSmallestInt([34, 15, 88, 2]));
+console.log(isDivisible(3, 1, 3));
