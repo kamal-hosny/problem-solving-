@@ -1,11 +1,8 @@
-function isDivisible(n, x, y) {
+function maps(x){
 
-  if(n % x == 0 && n % y == 0) {
-    return true
-  }else{
-    return false
-  }
-
+  return x.map((y) => {
+    return y * 2
+  })
 }
 
-console.log(isDivisible(3, 1, 3));
+console.log((maps([1, 2, 3])));
