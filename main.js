@@ -1,17 +1,11 @@
-function fakeBin(x){
-
-  let busket = []
-
-  for (let i = 0; i < x.length; i++) {
-    if(x[i] >= 5){
-      busket.push("1")
-    }else{
-      busket.push("0")
-    }
+function sum (numbers) {
+  if(numbers.length < 1) {
+    return 0
   }
 
-  return busket.join("")
-
+  return numbers.reduce((x, y) => {
+    return x + y
+  })
 }
 
-console.log(fakeBin('45385593107843568'));
+console.log(sum([1, 2, 3]));
