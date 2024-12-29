@@ -1,10 +1,9 @@
-function updateLight(current) {
-const trafficLight = ["green", "yellow", "red"]
-let currentValue = trafficLight.indexOf(current)
-
-let nextValue = (currentValue + 1) % 3 
-  return trafficLight[nextValue]
+function setAlarm(employed, vacation){
+if(employed && !vacation) {
+return true
+}else{
+  return false
+}
 }
 
-console.log(updateLight("red"));
-
+console.log(setAlarm(true, true));
