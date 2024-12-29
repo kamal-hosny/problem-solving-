@@ -1,9 +1,9 @@
-function setAlarm(employed, vacation){
-if(employed && !vacation) {
-return true
-}else{
-  return false
-}
-}
+const quarterOf = (month) => {
+  // Your code here
 
-console.log(setAlarm(true, true));
+  if (!month < 1 || month > 12) {
+    return Math.ceil(month / 3)
+  }
+
+}
+console.log(quarterOf(1))
