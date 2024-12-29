@@ -1,11 +1,10 @@
-function sum (numbers) {
-  if(numbers.length < 1) {
-    return 0
+function simpleMultiplication(number) {
+
+  if (number % 2 === 0) {
+    return number * 8
+  } {
+    return number * 9
   }
 
-  return numbers.reduce((x, y) => {
-    return x + y
-  })
 }
-
-console.log(sum([1, 2, 3]));
+console.log(simpleMultiplication(3));
