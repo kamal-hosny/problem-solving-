@@ -1,12 +1,8 @@
-function arrayPlusArray(arr1, arr2) {
-  
-  let arr = []
+function sumMix(x){
 
-  
-
-  return arr.concat(arr1).concat(arr2).reduce((x, y) => {
-    return x + y 
-  })
+  return x.reduce((a, b) => {
+    return Number(a) + Number(b)
+  }, 0)
 }
 
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+console.log(sumMix([9, 3, '7', '3']));
