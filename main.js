@@ -1,12 +1,10 @@
-function feast(beast, dish) {
+function updateLight(current) {
+const trafficLight = ["green", "yellow", "red"]
+let currentValue = trafficLight.indexOf(current)
 
-  if(beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1]){
-    return true
-  } else {
-    return false
-  }
+let nextValue = (currentValue + 1) % 3 
+  return trafficLight[nextValue]
+}
 
-  //your function here
-  }
+console.log(updateLight("red"));
 
-  console.log(feast("brown bear", "bear claw"));
