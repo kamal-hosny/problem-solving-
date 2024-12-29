@@ -1,8 +1,12 @@
-function sumMix(x){
+function feast(beast, dish) {
 
-  return x.reduce((a, b) => {
-    return Number(a) + Number(b)
-  }, 0)
-}
+  if(beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1]){
+    return true
+  } else {
+    return false
+  }
 
-console.log(sumMix([9, 3, '7', '3']));
+  //your function here
+  }
+
+  console.log(feast("brown bear", "bear claw"));
