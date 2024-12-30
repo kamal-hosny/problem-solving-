@@ -1,9 +1,6 @@
-function howManyLightsabersDoYouOwn(name) {
-if( name === "Zach") {
-  return 18
-}else{
-  return 0
-}
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+  return Math.abs(dadYearsOld - (sonYearsOld * 2))
 }
 
-console.log(howManyLightsabersDoYouOwn("Zach"));
+console.log(twiceAsOld(42,21));
