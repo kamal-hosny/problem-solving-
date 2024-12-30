@@ -1,8 +1,9 @@
-function addLength(str) {
-  //start-here
-  return str.split(" ").map((x) => {
-    return `${x} ${x.length}`
-  })
-  }
-  
-  console.log(addLength("apple ban"));
+function howManyLightsabersDoYouOwn(name) {
+if( name === "Zach") {
+  return 18
+}else{
+  return 0
+}
+}
+
+console.log(howManyLightsabersDoYouOwn("Zach"));
