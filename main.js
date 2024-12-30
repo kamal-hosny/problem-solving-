@@ -1,6 +1,9 @@
-function twiceAsOld(dadYearsOld, sonYearsOld) {
-  // your code here
-  return Math.abs(dadYearsOld - (sonYearsOld * 2))
+function hoopCount (n) {
+  if(n >= 10) {
+    return "Great, now move on to tricks"
+  } else {
+    return "Keep at it until you get it"
+  }
 }
 
-console.log(twiceAsOld(42,21));
+console.log(hoopCount(4));
