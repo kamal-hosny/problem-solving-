@@ -1,10 +1,20 @@
-function sumStr(a,b) {
-  const num1 = a ? Number(a) : 0; 
-  const num2 = b ? Number(b) : 0;
-  
-  const clac = num1 + num2
+function twoSort(s) {
+  for (let i = 0; i < s.length - 1; i++) {
+    for (let j = 0; j < s.length - i - 1; j++) {
+      if (s[j] > s[j + 1]) {
+        let temp = s[j];
+        s[j] = s[j + 1];
+        s[j + 1] = temp;
+      }
+    }
+  }
 
-  return String(clac)
+
+  let firstWord = s[0];
+  
+
+  return firstWord.split('').join('***');
 }
 
-console.log(sumStr("4", "5"));
+console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
+
