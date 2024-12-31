@@ -1,6 +1,23 @@
-function reverseWords(str){
+function bmi(weight, height) {
   
-  return str.trim().split(" ").reverse().join(" ")
+  let bmi = weight / (height ** 2)
+
+  switch (true) {
+    case bmi <= 18.5:
+      return "Underweight"
+  
+    case bmi <= 25.0:
+      return "Normal"
+  
+    case bmi <= 30.0:
+      return "Overweight"
+  
+    case bmi > 30:
+      return "Obese"
+    default:
+      break;
+  }
+
 }
 
-console.log(reverseWords("hello world!"));
+console.log(bmi(50, 1.80));
