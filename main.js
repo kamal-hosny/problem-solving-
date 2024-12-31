@@ -1,13 +1,10 @@
-function powersOfTwo(n){
+function sumStr(a,b) {
+  const num1 = a ? Number(a) : 0; 
+  const num2 = b ? Number(b) : 0;
   
-let num = Array(n+1).fill(0).map((x, i) => {
-  return x + i
-}).map((x) => {
-  return Math.pow(2, x)
-})
+  const clac = num1 + num2
 
-
-  return num
+  return String(clac)
 }
 
-console.log(powersOfTwo(3));
+console.log(sumStr("4", "5"));
