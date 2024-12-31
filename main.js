@@ -1,9 +1,18 @@
-function hoopCount (n) {
-  if(n >= 10) {
-    return "Great, now move on to tricks"
-  } else {
-    return "Keep at it until you get it"
-  }
+function correct(string){
+	
+  return [...string].map((x) => {
+    switch (x) {
+      case "5":
+        return "S"
+      case "0":
+        return "O"
+      case "1":
+        return "I"
+    
+      default :
+        return x 
+    }
+  }).join("")
 }
 
-console.log(hoopCount(4));
+console.log(correct("L0ND0N"));
