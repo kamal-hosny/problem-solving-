@@ -1,23 +1,15 @@
-function bmi(weight, height) {
-  
-  let bmi = weight / (height ** 2)
+function divisibleBy(numbers, divisor){
 
-  switch (true) {
-    case bmi <= 18.5:
-      return "Underweight"
-  
-    case bmi <= 25.0:
-      return "Normal"
-  
-    case bmi <= 30.0:
-      return "Overweight"
-  
-    case bmi > 30:
-      return "Obese"
-    default:
-      break;
+  let basket = []
+
+  for (let i = 0; i < numbers.length; i++) {
+    if(numbers[i] % divisor == 0){
+      basket.push(numbers[i]) 
+    }
+    
   }
 
+  return basket
 }
 
-console.log(bmi(50, 1.80));
+console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
