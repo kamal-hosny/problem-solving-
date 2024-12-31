@@ -1,15 +1,13 @@
-function divisibleBy(numbers, divisor){
+function powersOfTwo(n){
+  
+let num = Array(n+1).fill(0).map((x, i) => {
+  return x + i
+}).map((x) => {
+  return Math.pow(2, x)
+})
 
-  let basket = []
 
-  for (let i = 0; i < numbers.length; i++) {
-    if(numbers[i] % divisor == 0){
-      basket.push(numbers[i]) 
-    }
-    
-  }
-
-  return basket
+  return num
 }
 
-console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
+console.log(powersOfTwo(3));
