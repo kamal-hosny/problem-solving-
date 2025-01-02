@@ -1,13 +1,9 @@
-function expressionMatter(a, b, c) {
-  let odds = [
-    a + b + c,
-    a * b * c,
-    a * (b + c),
-    (a + b) * c,
-    a + (b * c),
-    (a * b) + c
-  ]
-  return Math.max(...odds)
+function evenOrOdd(number) {
+  if(number % 2 == 0){
+    return 'Even'
+  }else{
+    return 'Odd'
+  }
 }
 
-console.log(expressionMatter(5, 1, 3));
+console.log(evenOrOdd(2));
