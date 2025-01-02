@@ -1,12 +1,5 @@
-function between(a, b) {
-  // your code here
-  let basket = []
-
-  for (let i = a; i <= b; i++) {
-    basket.push(i)
-    
-  }
-  return basket
+function sayHello(name) {
+  return `Hello, ${name}`
 }
 
-console.log(between(-2, 2));
+console.log(sayHello("Mr. Spock"));
