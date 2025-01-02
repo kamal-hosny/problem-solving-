@@ -1,15 +1,12 @@
-function gooseFilter (birds) {
-  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+function between(a, b) {
+  // your code here
   let basket = []
 
-  for (let i = 0; i < birds.length; i++) {
-    if(!geese.includes(birds[i])){
-      basket.push(birds[i])
-    }
+  for (let i = a; i <= b; i++) {
+    basket.push(i)
     
   }
-return basket
-  // return an array containing all of the strings in the input array except those that match strings in geese
-};
+  return basket
+}
 
-console.log(gooseFilter( ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
+console.log(between(-2, 2));
