@@ -1,5 +1,6 @@
-function sayHello(name) {
-  return `Hello, ${name}`
-}
+function move (position, roll) {
+    // return the new position
+    return ((roll * 2) + position)
+  }
 
-console.log(sayHello("Mr. Spock"));
+  console.log(move(3, 6));
