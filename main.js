@@ -1,17 +1,11 @@
-function sumMul(n,m){
+function sayHello( name, city, state ) {
+
+    let names = name.map((x) => {
+        return x
+    })
     
-    if (n + m <= 0) {
-        return "INVALID"
-    }
+    return `Hello, ${names.join(" ")}! Welcome to ${city}, ${state}!`
 
-    let basket = []
+}
 
-    for (let i = n; i < m; i += n) {
-        
-        basket.push(i)
-        
-    }
-    return basket.reduce((x, y) => x+ y)
-    }
-
-    console.log(sumMul(65, 9490));
+console.log(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'));
