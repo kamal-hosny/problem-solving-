@@ -1,20 +1,12 @@
-// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+const areaOrPerimeter = function(l , w) {
+    // Return your answer
 
-// Use conditionals to return the proper message:
-
-// case	return
-// name equals owner	'Hello boss'
-// otherwise	'Hello guest'
-
-function greet (name, owner) {
-    
-    if(owner === name){
-        return 'Hello boss'
-    }else {
-        return 'Hello guest'
+    if(l == w) {
+        return l * w
+    } else {
+        return (l + w )  * 2 
     }
 
+  };
 
-  }
-
-  console.log(greet('Greg', 'Daniel'));
+  console.log(areaOrPerimeter(3, 3));
