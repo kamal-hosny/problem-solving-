@@ -1,35 +1,9 @@
-// For every good kata idea there seem to be quite a few bad ones!
+// Write a function that returns a string in which firstname is swapped with last name.
 
-// In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
+function nameShuffler(str){
+    //Shuffle It
 
-function well(x){
+    return str.split(" ").reverse().join(" ")
+  }
 
-    let busketBad = []
-    let busketGood = []
-
-    for (let i = 0; i < x.length; i++) {
-        if(x[i] === "good"){
-            busketGood.push(x[i])
-        }else {
-            busketBad.push(x[i])
-        }
-    }
-
-    switch (true) {
-        case busketGood.length === 0:
-            return 'Fail!'
-
-        case busketGood.length <= 2:
-            return 'Publish!'
-
-        case busketGood.length > 2:
-            return 'I smell a series!'
-    
-        default:
-            break;
-    }
-
-
-}
-
-console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad']));
+  console.log(nameShuffler("john McClane"));
