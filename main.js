@@ -1,25 +1,11 @@
-// Issue
-// Looks like some hoodlum plumber and his brother has been running around and damaging your stages again.
+// You ask a small girl,"How old are you?" She always says, "x years old", where x is a random number between 0 and 9.
 
-// The pipes connecting your level's stages together need to be fixed before you receive any more complaints.
+// Write a program that returns the girl's age (0-9) as an integer.
 
-// The pipes are correct when each pipe after the first is 1 more than the previous one.
+// Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
 
-// Task
-// Given a list of unique numbers sorted in ascending order, return a new list so that the values increment by 1 for each index from the minimum value up to the maximum value (both included).
-
-function pipeFix(numbers){
-    let start = numbers[0]
-    let last = numbers[numbers.length - 1]
-
-    let basket = [];
-
-    for (let i = start; i <= last; i++) {
-        basket.push(i)
-        
-    }
-
-return basket
+function getAge(inputString){
+return Number(inputString.split(" ")[0])
 }
 
-console.log(pipeFix([1,3,5,6,7,8]));
+console.log(getAge("4 years old"));
