@@ -1,27 +1,22 @@
-// This function should test if the factor is a factor of base.
+// The Story:
+// Bob is working as a bus driver. However, he has become extremely popular amongst the city's residents. With so many passengers wanting to get aboard his bus, he sometimes has to face the problem of not enough space left on the bus! He wants you to write a simple program telling him if he will be able to fit all the passengers.
 
-// Return true if it is a factor or false if it is not.
+// Task Overview:
+// You have to write a function that accepts three parameters:
 
-// About factors
-// Factors are numbers you can multiply together to get another number.
+// cap is the amount of people the bus can hold excluding the driver.
+// on is the number of people on the bus excluding the driver.
+// wait is the number of people waiting to get on to the bus excluding the driver.
+// If there is enough space, return 0, and if there isn't, return the number of passengers he can't take.
 
-// 2 and 3 are factors of 6 because: 2 * 3 = 6
-
-// You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
-// You can use the mod operator (%) in most languages to check for a remainder
-// For example 2 is not a factor of 7 because: 7 % 2 = 1
-
-// Note: base is a non-negative number, factor is a positive number.
-
-function checkForFactor (base, factor) {
-
-    if(base % factor == 0) {
-        return true
+function enough(cap, on, wait) {
+    // your code here
+    let diff = cap - on 
+    if( diff >= wait){
+        return  0
     }else {
-        return false
+        return Math.abs(diff - wait)
     }
-
-    // code here
   }
 
-  console.log(checkForFactor(9,2));
+  console.log(enough(100, 60, 5));
