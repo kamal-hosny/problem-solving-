@@ -1,22 +1,20 @@
-// The Story:
-// Bob is working as a bus driver. However, he has become extremely popular amongst the city's residents. With so many passengers wanting to get aboard his bus, he sometimes has to face the problem of not enough space left on the bus! He wants you to write a simple program telling him if he will be able to fit all the passengers.
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 
-// Task Overview:
-// You have to write a function that accepts three parameters:
+// Use conditionals to return the proper message:
 
-// cap is the amount of people the bus can hold excluding the driver.
-// on is the number of people on the bus excluding the driver.
-// wait is the number of people waiting to get on to the bus excluding the driver.
-// If there is enough space, return 0, and if there isn't, return the number of passengers he can't take.
+// case	return
+// name equals owner	'Hello boss'
+// otherwise	'Hello guest'
 
-function enough(cap, on, wait) {
-    // your code here
-    let diff = cap - on 
-    if( diff >= wait){
-        return  0
+function greet (name, owner) {
+    
+    if(owner === name){
+        return 'Hello boss'
     }else {
-        return Math.abs(diff - wait)
+        return 'Hello guest'
     }
+
+
   }
 
-  console.log(enough(100, 60, 5));
+  console.log(greet('Greg', 'Daniel'));
