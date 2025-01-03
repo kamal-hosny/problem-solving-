@@ -1,15 +1,17 @@
-function distinct(a) {
+function sumMul(n,m){
     
-    let basket = []
-
-    for (let i = 0; i < a.length; i++) {
-        if(!basket.includes(a[i])){
-            basket.push(a[i])
-        }
+    if (n + m <= 0) {
+        return "INVALID"
     }
 
-    return basket
-    
-  }
+    let basket = []
 
-  console.log(distinct([1, 2, 1, 1, 3, 2]));
+    for (let i = n; i < m; i += n) {
+        
+        basket.push(i)
+        
+    }
+    return basket.reduce((x, y) => x+ y)
+    }
+
+    console.log(sumMul(65, 9490));
