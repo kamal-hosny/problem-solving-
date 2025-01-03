@@ -1,18 +1,14 @@
-function stringy(size) {
-    // your code here  
-    let arr = []
+function findMultiples(integer, limit) {
+   
+    let basket = [];
 
-    for (let i = 1; i <= size; i++) {
+    for (let i = integer; i <= limit; i+= integer) {
         
-        if( i % 2 === 0) {
-            arr.push(0)
-        }else{
-            arr.push(1)
-        }
-        
+        basket.push(i)
         
     }
-    
-    return arr.join("")
+
+    return basket
   }
-  console.log(stringy(6));
+  
+  console.log(findMultiples(5, 7));
